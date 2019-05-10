@@ -1,0 +1,19 @@
+function diejia
+h0 = figure('toolbar','none',...
+    'position',[198 56 350 300],...
+    'name','示例三');
+h1 = axes('parent',h0,...
+    'visible','off');
+axes(h1);
+x = -2*pi:0.05:2*pi;
+y1 = sin(x);
+y2 = cos(x);
+plot(x,y1,...
+    '-*r',...                  
+    x,y2,...
+    '-og');
+    %一个是红色的星星一个是绿色的o
+xlabel('自变量X');
+ylabel('函数值');
+title('三角函数');
+grid on;
